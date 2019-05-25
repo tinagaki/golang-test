@@ -44,7 +44,7 @@ func mytail(file string, line_num int) (err error) {
 	if err := scanner.Err(); err != nil {
 		return errors.New("line scan error")
 	}
-	fmt.Println("=====>", file, "<=====")
+	fmt.Println("=====", file, "=====")
 	for i := range lines {
 		fmt.Println(lines[i])
 	}
